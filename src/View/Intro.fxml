@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="329.0" prefWidth="600.0" style="-fx-background-color: #e55039;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.IntroController">
+   <children>
+      <ImageView fitHeight="181.0" fitWidth="195.0" layoutX="210.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Intro.png" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="PbIntro" layoutX="15.0" layoutY="304.0" prefHeight="11.0" prefWidth="570.0" progress="0.0" />
+      <Label fx:id="lblPercentage" layoutX="15.0" layoutY="287.0" prefHeight="17.0" prefWidth="38.0" text="100 %" textFill="WHITE" />
+      <Label layoutX="127.0" layoutY="29.0" text="City Book Shop" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
