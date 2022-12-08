@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="498.0" prefWidth="897.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ba5054" height="498.0" stroke="#ba5054" strokeType="INSIDE" width="432.0" />
+      <Label layoutX="36.0" layoutY="58.0" prefHeight="46.0" prefWidth="119.0" text="City" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="128.0" prefHeight="70.0" prefWidth="232.0" text="Bookshop" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="36.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Intro.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="568.0" layoutY="64.0" prefHeight="59.0" prefWidth="199.0" text="Login Form" textFill="#ba5054">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="28.0" fitWidth="31.0" layoutX="871.0" layoutY="2.0" onDragDetected="#btnExitOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <image>
+            <Image url="@../Images/aaaaaaaaa.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="504.0" layoutY="180.0" prefHeight="36.0" prefWidth="106.0" text="Username" textFill="#ba5054">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="504.0" layoutY="238.0" prefHeight="36.0" prefWidth="106.0" text="Password" textFill="#ba5054">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" layoutX="630.0" layoutY="181.0" prefHeight="20.0" prefWidth="187.0" style="-fx-background-color: invisible;" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Line endX="86.0" layoutX="731.0" layoutY="209.0" startX="-100.0" stroke="#ba5054" />
+      <TextField fx:id="txtPassword" layoutX="630.0" layoutY="232.0" prefHeight="16.0" prefWidth="187.0" style="-fx-background-color: invisible;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Line endX="86.0" layoutX="731.0" layoutY="263.0" startX="-100.0" stroke="#ba5054" />
+      <Button layoutX="630.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="18.0" prefWidth="119.0" style="-fx-background-color: #ba5054; -fx-background-radius: 20;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="653.0" layoutY="332.0" mnemonicParsing="false" onAction="#btnResetOnAction" prefHeight="14.0" prefWidth="74.0" style="-fx-background-color: invisible; -fx-background-radius: 20;" text="Reset" textFill="#ba5054">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
