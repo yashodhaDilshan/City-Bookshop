@@ -1,0 +1,23 @@
+CREATE DATABASE Citybookshop;
+
+CREATE TABLE Books(
+    BookId int,
+    Name varchar(100),
+    Author varchar(100),
+    Category varchar(15),
+    Qty int,    
+    Price double,
+    AddDate Date, 
+    Stock varchar(15),
+    PRIMARY KEY(BookId)
+);
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="541.0" prefWidth="1014.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.BooksController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ba5054" height="541.0" stroke="#ba5054" strokeType="INSIDE" width="394.0" />
+      <Label layoutX="133.0" layoutY="64.0" prefHeight="53.0" prefWidth="189.0" text="Add Books" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="70.0" fitWidth="91.0" layoutX="31.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Intro.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtSearch" layoutX="591.0" layoutY="42.0" prefHeight="27.0" prefWidth="231.0" style="-fx-background-radius: 30;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Button layoutX="790.0" layoutY="42.0" mnemonicParsing="false" onAction="#btnSearchOnAction" prefHeight="27.0" prefWidth="25.0" style="-fx-background-color: #ba5054; -fx-background-radius: 30;">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8-search-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="45.0" layoutY="201.0" prefHeight="27.0" prefWidth="51.0" text="Name" textFill="WHITE" AnchorPane.leftAnchor="45.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="144.0" layoutY="199.0" prefHeight="25.0" prefWidth="205.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="45.0" layoutY="158.0" prefHeight="27.0" prefWidth="51.0" text="Id" textFill="WHITE" AnchorPane.leftAnchor="45.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBookId" layoutX="144.0" layoutY="158.0" prefHeight="27.0" prefWidth="64.0" text="1" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="245.0" prefHeight="27.0" prefWidth="64.0" text="Author" textFill="WHITE" AnchorPane.leftAnchor="45.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAuthor" layoutX="145.0" layoutY="244.0" prefHeight="25.0" prefWidth="205.0" AnchorPane.leftAnchor="145.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="45.0" layoutY="291.0" prefHeight="27.0" prefWidth="88.0" text="Category" textFill="WHITE" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="291.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbCategory" layoutX="145.0" layoutY="291.0" prefWidth="150.0" promptText="Select Category" AnchorPane.leftAnchor="145.0" AnchorPane.topAnchor="291.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Label layoutX="45.0" layoutY="332.0" prefHeight="27.0" prefWidth="64.0" text="Qty" textFill="WHITE" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="332.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQty" layoutX="145.0" layoutY="332.0" prefHeight="30.0" prefWidth="70.0" AnchorPane.leftAnchor="145.0" AnchorPane.topAnchor="332.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="45.0" layoutY="378.0" prefHeight="27.0" prefWidth="64.0" text="Price" textFill="WHITE" AnchorPane.topAnchor="378.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPrice" layoutX="145.0" layoutY="378.0" prefHeight="30.0" prefWidth="157.0" AnchorPane.topAnchor="378.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="55.0" layoutY="442.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="35.0" prefWidth="88.0" style="-fx-background-color: white; -fx-background-radius: 30;" text="Add" textFill="#ba5054">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="154.0" layoutY="442.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="88.0" style="-fx-background-color: white; -fx-background-radius: 30;" text="Update" textFill="#ba5054">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="252.0" layoutY="442.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="88.0" style="-fx-background-color: white; -fx-background-radius: 30;" text="Delete" textFill="#ba5054">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="978.0" layoutY="6.0" mnemonicParsing="false" onAction="#btnExitOnAction" prefHeight="2.0" prefWidth="28.0" style="-fx-background-radius: 30; -fx-border-color: red; -fx-border-radius: 30; -fx-border-width: 2; -fx-background-color: invisible;" text="X" textFill="#ff000d" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="945.0" layoutY="6.0" mnemonicParsing="false" onAction="#btnMinimizeOnAction" prefHeight="1.0" prefWidth="28.0" style="-fx-background-radius: 30; -fx-border-color: red; -fx-border-radius: 30; -fx-border-width: 2; -fx-background-color: invisible;" text="_" textFill="#ff000d" AnchorPane.topAnchor="8.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnBack" layoutX="24.0" layoutY="20.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="29.0" prefWidth="28.0" style="-fx-background-radius: 30; -fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2; -fx-background-color: invisible;" text="&lt;" textFill="WHITE" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="8.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="tblBooks" layoutX="422.0" layoutY="90.0" prefHeight="427.0" prefWidth="568.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="31.0" text="Id" />
+          <TableColumn fx:id="colName" prefWidth="82.0" text="Name" />
+            <TableColumn fx:id="colAuthor" prefWidth="86.0" text="Author" />
+            <TableColumn fx:id="colCategory" prefWidth="94.0" text="Category" />
+            <TableColumn fx:id="colQty" prefWidth="43.0" text="Qty" />
+            <TableColumn fx:id="colPrice" prefWidth="84.0" text="Price" />
+            <TableColumn fx:id="colDate" prefWidth="81.0" text="Date" />
+            <TableColumn fx:id="colStock" prefWidth="66.0" text="Stock" />
+        </columns>
+      </TableView>
+      <Button layoutX="545.0" layoutY="42.0" mnemonicParsing="false" onAction="#btnReloadOnAction" prefHeight="27.0" prefWidth="25.0" style="-fx-background-color: #ba5054; -fx-background-radius: 30;">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Refresh.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

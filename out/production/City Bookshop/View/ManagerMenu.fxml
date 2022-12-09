@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="541.0" prefWidth="859.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ManagerMenuController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ba5054" height="541.0" stroke="#ba5054" strokeType="INSIDE" width="394.0" />
+      <Label layoutX="100.0" layoutY="179.0" prefHeight="49.0" prefWidth="195.0" text="Menu" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="109.0" text="Manager" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="136.0" fitWidth="127.0" layoutX="134.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Intro.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBook" layoutX="523.0" layoutY="137.0" mnemonicParsing="false" onAction="#btnBookOnAction" prefHeight="67.0" prefWidth="227.0" style="-fx-background-color: #ba5054; -fx-background-radius: 50;" text="Books" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnCashiers" layoutX="523.0" layoutY="238.0" mnemonicParsing="false" onAction="#btnCashiersOnAction" prefHeight="67.0" prefWidth="227.0" style="-fx-background-color: #ba5054; -fx-background-radius: 50;" text="Cashiers" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnBill" layoutX="523.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnBillOnAction" prefHeight="67.0" prefWidth="227.0" style="-fx-background-color: #ba5054; -fx-background-radius: 50;" text="Payments" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="817.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnExitOnAction" prefHeight="18.0" prefWidth="18.0" style="-fx-background-radius: 30; -fx-border-color: red; -fx-border-radius: 30; -fx-border-width: 2; -fx-background-color: invisible;" text="X" textFill="#ff000d" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="784.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnMinimizeOnAction" prefHeight="29.0" prefWidth="28.0" style="-fx-background-radius: 30; -fx-border-color: red; -fx-border-radius: 30; -fx-border-width: 2; -fx-background-color: invisible;" text="_" textFill="#ff000d" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="14.0" layoutY="10.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="28.0" style="-fx-background-radius: 30; -fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2; -fx-background-color: invisible;" text="&lt;" textFill="WHITE" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnLogOut" layoutX="781.0" layoutY="506.0" mnemonicParsing="false" onAction="#btnLogOutOnAction" prefHeight="22.0" prefWidth="72.0" style="-fx-background-color: #ba5054; -fx-background-radius: 50;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
