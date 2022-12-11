@@ -54,7 +54,6 @@ public class BooksController implements Initializable {
         }
 
 
-
     }
 
     public void btnUpdateOnAction(ActionEvent actionEvent) {
